@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Isotope from "isotope-layout";
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
-
+import ProyectosInfo from "./ProyectosInfo";
 const images = [
   {
     img: "img/BOT.jpg",
@@ -64,7 +64,7 @@ const images = [
 
 
 const Proyectositem = () => {
-
+  const [modal, setModal] = useState(false)
   return (
     <div className=" relative">
       {/* Botones de filtro */}
@@ -94,7 +94,7 @@ const Proyectositem = () => {
           ))}
         </Masonry>
       </ResponsiveMasonry>
-
+      {modal && <ProyectosInfo/>}
         
     </div>
   );
