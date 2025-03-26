@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Isotope from "isotope-layout";
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 import ProyectosInfo from "./ProyectosInfo";
+
 const images = [
   {
     img: "img/BOT.jpg",
@@ -65,6 +66,7 @@ const images = [
 
 const Proyectositem = () => {
   const [modal, setModal] = useState(false)
+  const [info, setInfo] = useState({})
   return (
     <div className=" relative">
       {/* Botones de filtro */}
@@ -75,7 +77,7 @@ const Proyectositem = () => {
         <Masonry columnsCount={3} gutter="10px">
           {images.map((image, i) => (
               <div className="group relative rounded-md">
-                <a href=" #">
+                <a className="cursor-pointer" onClick={() => {setModal(true),setInfo(image)}}>
                 <img
                     className="transition-transform duration-300 rounded-md"
                     key={i}
@@ -94,7 +96,7 @@ const Proyectositem = () => {
           ))}
         </Masonry>
       </ResponsiveMasonry>
-      {modal && <ProyectosInfo/>}
+      {modal && <ProyectosInfo info={info}/>}
         
     </div>
   );
