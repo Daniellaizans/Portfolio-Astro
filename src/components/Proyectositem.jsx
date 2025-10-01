@@ -102,6 +102,7 @@ const images = [
     type: "Aplicación Web",
     colortext: "#DE9ED2",
     colorseparate: "#784D81",
+    imgInfo: ["img/minna/minna1.webp","img/minna/minna2.webp","img/minna/minna3.webp","img/minna/minna4.webp","img/minna/minna5.webp"],
     tags: [ TAGS.NODE,TAGS.REACT,TAGS.TAILWIND,TAGS.MYSQL,TAGS.AZURE],
     textdes: `Desarrollé una plataforma de comercio electrónico para una empresa especializada en la venta de productos de belleza, encargándome tanto del backend como del frontend. Utilicé metodologías ágiles para garantizar un desarrollo escalable y eficiente.
   El sitio permite a los usuarios explorar productos por categoría, agregarlos a un carrito de compras y completar sus pedidos mediante MercadoPago, tras registrarse en la plataforma.
@@ -113,6 +114,7 @@ const images = [
     title: "Sistema Web",
     empresa: "TIGAL GROUP",
     type: "Web",
+    imgInfo: ["img/TG/TG1.webp","img/TG/TG2.webp","img/TG/TG3.webp","img/TG/TG4.webp"],
     colortext: "#4EFEB3",
     tags: [ TAGS.REACT,TAGS.TAILWIND,TAGS.MYSQL]
   },
@@ -123,6 +125,7 @@ const images = [
     type: "Web / Local",
     colortext: "#ffcf59",
     colorseparate: "#784D81",
+    imgInfo: ["img/Cuispes/Cuispes1.webp","img/Cuispes/Cuispes2.webp","img/Cuispes/Cuispes3.webp","img/Cuispes/Cuispes4.webp"],
     imgdetail: "img/Cuispes-Web.png",
     tags: [ TAGS.REACT,TAGS.TAILWIND,TAGS.AZURE]
   },
@@ -138,6 +141,7 @@ const images = [
     empresa: "TIGAL GROUP",
     type: "Aplicación Web",
     colortext: "#0212E4",
+    imgInfo: ["img/DC/DC1.webp","img/DC/DC2.webp","img/DC/DC3.webp","img/DC/DC4.webp"],
     tags: [ TAGS.REACT,TAGS.TAILWIND,TAGS.MYSQL]
   },
   {

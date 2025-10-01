@@ -35,7 +35,7 @@ const ProyectosInfo = ({info, close}) => {
 
     return (
         <>
-            <div className="fixed top-0 left-0 w-full h-full flex justify-center items-start bg-[#13151a] bg-opacity-50 z-50">
+            <div className="fixed top-0 mt-4 left-0 w-full h-full flex justify-center items-start bg-[#13151a] bg-opacity-50 z-50 overflow-auto ">
                 <div className="flex relative flex-col rounded-lg overflow-hidden shadow-xl w-[80%] md:w-[70%]  bg-gradient-to-b from-[#20232a] to-[#1c1f26]">
                     
                     {/* Imagen en la parte superior */}
@@ -43,7 +43,7 @@ const ProyectosInfo = ({info, close}) => {
                         <img 
                             src={info.imgdetail || info.img} 
                             alt="Sharlee" 
-                            className="w-full h-[300px] object-cover"
+                            className="w-full h-[300px] object-cover rounded-b-xl"
                         />
                     </div>
                     <button onClick={close} className="w-auto text-lg absolute text-zinc-600 right-0 m-5"><i class="fa-solid fa-x"></i></button>
@@ -65,6 +65,22 @@ const ProyectosInfo = ({info, close}) => {
                             <div className="flex w-[50%]">
                                 <span>{info.textdes || ''}</span>
                             </div>
+                        </div>
+                    </div>
+                    <div className="mt-4 w-full ">
+                        <div className="">
+                            {info.imgInfo && info.imgInfo.map((src, index) => (
+                            <div 
+                                key={index} 
+                                className="overflow-hidden my-4 rounded-xl shadow-md transition-transform duration-300"
+                            >
+                                <img 
+                                src={src} 
+                                alt={`imagen-${index}`} 
+                                className="w-full "
+                                />
+                            </div>
+                            ))}
                         </div>
                     </div>
                     
