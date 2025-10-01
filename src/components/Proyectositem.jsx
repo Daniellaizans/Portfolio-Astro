@@ -109,6 +109,7 @@ const images = [
     type: "Aplicación Web",
     colortext: "#DE9ED2",
     colorseparate: "#784D81",
+    imgInfo: ["img/minna/minna1.webp","img/minna/minna2.webp","img/minna/minna3.webp","img/minna/minna4.webp","img/minna/minna5.webp"],
     tags: [ TAGS.NODE,TAGS.REACT,TAGS.TAILWIND,TAGS.MYSQL,TAGS.AZURE],
     textdes: `Desarrollé una plataforma de comercio electrónico para una empresa especializada en la venta de productos de belleza, encargándome tanto del backend como del frontend. Utilicé metodologías ágiles para garantizar un desarrollo escalable y eficiente.
   El sitio permite a los usuarios explorar productos por categoría, agregarlos a un carrito de compras y completar sus pedidos mediante MercadoPago, tras registrarse en la plataforma.
@@ -121,6 +122,7 @@ const images = [
     año: "2023",
     empresa: "TIGAL GROUP",
     type: "Web",
+    imgInfo: ["img/TG/TG1.webp","img/TG/TG2.webp","img/TG/TG3.webp","img/TG/TG4.webp"],
     colortext: "#4EFEB3",
     tags: [ TAGS.REACT,TAGS.TAILWIND,TAGS.MYSQL],
     textdes: "Desarrollé una página web interactiva para la agencia de publicidad y marketing Tigal Group. El sitio fue diseñado con una interfaz moderna y llamativa, enfocada en el posicionamiento digital de la marca y la captación de clientes. Incluye secciones dinámicas que facilitan la presentación de servicios y optimizan la toma de solicitudes en línea, mejorando la experiencia del usuario y fortaleciendo la presencia digital de la empresa."
@@ -133,6 +135,7 @@ const images = [
     type: "Web / Local",
     colortext: "#ffcf59",
     colorseparate: "#784D81",
+    imgInfo: ["img/Cuispes/Cuispes1.webp","img/Cuispes/Cuispes2.webp","img/Cuispes/Cuispes3.webp","img/Cuispes/Cuispes4.webp"],
     imgdetail: "img/Cuispes-Web.png",
     tags: [ TAGS.REACT,TAGS.TAILWIND,TAGS.AZURE],
     textdes: "Desarrollé Cuispes, una aplicación web interactiva orientada al turismo, diseñada para tabletas informativas en un centro turístico. La plataforma permite a los visitantes conocer la descripción de la zona, así como información detallada de la fauna que habita en el lugar. Su interfaz dinámica y visualmente atractiva fomenta la interacción con los turistas, ofreciendo una experiencia novedosa y educativa. Actualmente en uso, la aplicación ha permitido a la empresa generar mayor dinamismo con sus visitantes, fortaleciendo el valor turístico y la innovación en la presentación de contenidos."
@@ -149,9 +152,9 @@ const images = [
     empresa: "TIGAL GROUP",
     año: "2023",
     type: "Aplicación Web",
-    colortext: "#4A56EC",
-    tags: [ TAGS.REACT,TAGS.TAILWIND,TAGS.MYSQL],
-    textdes: "Diseñé y desarrollé una tienda virtual interactiva para Design Collections, la línea de licorería y floral de Tigal Group. El sitio web presenta una interfaz moderna y atractiva que permite a los usuarios explorar de forma intuitiva los productos, visualizar sus detalles y acceder a una experiencia de compra fluida. Se implementó una pasarela de pagos integrada con Culqi, asegurando transacciones seguras y confiables. Además, se trabajó en la optimización SEO y el posicionamiento digital, potenciando la visibilidad de la marca y facilitando la captación de nuevos clientes."
+    colortext: "#0212E4",
+    imgInfo: ["img/DC/DC1.webp","img/DC/DC2.webp","img/DC/DC3.webp","img/DC/DC4.webp"],
+    tags: [ TAGS.REACT,TAGS.TAILWIND,TAGS.MYSQL]
   },
   {
     img: "img/Proditel.png",
