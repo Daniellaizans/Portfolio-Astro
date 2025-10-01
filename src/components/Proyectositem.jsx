@@ -12,7 +12,7 @@ import Azure from "../icons/Azure";
 import Meta from "../icons/Meta";
 import Aws from "../icons/Aws";
 import PostGress from "../icons/PostGress";
-
+import { motion } from "framer-motion";
 const TAGS = {
   REACT: {
     name: "REACT",
@@ -69,36 +69,43 @@ const TAGS = {
 const images = [
   {
     img: "img/BOT.jpg",
+    año: "2023",
     title: "CHAT BOT I.A.",
+    
     empresa: "TIGAL GROUP",
     type: "Aplicacion",
     colortext: "#4EFEB3",
-    tags: [TAGS.NODE, TAGS.META, TAGS.AWS],
+    tags: [TAGS.NODE, TAGS.META, TAGS.AWS, TAGS.POSTGRESS],
     textdes: "Desarrollé un chatbot con Node.js para una empresa que abarca tres áreas de negocio: licorería, floral y servicios de marketing, diseño y branding. Este sistema, integrado con la API de WhatsApp de Meta, permite gestionar conversaciones de clientes, registrar pedidos en una base de datos y almacenar la información de los usuarios atendidos. El chatbot ofrece atención automatizada según la preferencia del cliente, asegurando respuestas rápidas y eficientes. Además, envía notificaciones en tiempo real a los administradores cuando se concreta una venta o se realiza una reserva, optimizando la gestión y mejorando la experiencia del usuario."
   },
   {
     img: "img/HM.png",
     title: "Sistema Web",
+    año: "2024",
     empresa: "TIGAL GROUP",
     type: "Web",
     colortext: "#FC6B03",
     colorseparate: "#233245",
-    tags: [ TAGS.REACT,TAGS.TAILWIND]
+    tags: [ TAGS.REACT,TAGS.TAILWIND, TAGS.AZURE,TAGS.NODE],
+    textdes: "Actualmente participo en la migración de un sistema de escritorio a una plataforma web en la nube, centralizando todos los formularios clínicos (triaje, exámenes ocupacionales, rayos X, radiografías, entre otros). El nuevo sistema permite a médicos y personal acceder y gestionar la información en cualquier momento y lugar, incorporando la digitalización de firmas y huellas de los pacientes directamente en los formularios. La plataforma ofrece un diseño más intuitivo y funcional, mejorando la rapidez en los procesos, la disponibilidad de la información y la experiencia de uso para todo el personal de la clínica."
   },
   {
     img: "img/login2.png",
     title: "Sistema Administrativo",
     empresa: "HORIZONTE MEDIC",
+    año: "2024",
     type: "Aplicación Web",
     colortext: "#FC6B03",
     colorseparate: "#233245",
     imgdetail: "img/HM.png",
-    tags: [ TAGS.JAVA,TAGS.AZURE]
+    tags: [ TAGS.JAVA,TAGS.AZURE],
+    textdes: "Brindo mantenimiento y mejoras a un sistema de escritorio utilizado en una clínica para la gestión integral de pacientes. El sistema cuenta con múltiples módulos y formularios para diferentes áreas como exámenes ocupacionales, triaje, rayos X y radiografías. Implementamos la digitalización de firmas y huellas de los pacientes, integrando esta información en todos los reportes digitales, lo que optimizó la trazabilidad, redujo el uso de papel y mejoró la eficiencia administrativa."
   },
   {
     img: "img/Minna.png",
     title: "E-Commerce",
     empresa: "MINNA | K-Beauty",
+    año: "2024",
     type: "Aplicación Web",
     colortext: "#DE9ED2",
     colorseparate: "#784D81",
@@ -111,20 +118,24 @@ const images = [
   {
     img: "img/TG.jpg",
     title: "Sistema Web",
+    año: "2023",
     empresa: "TIGAL GROUP",
     type: "Web",
     colortext: "#4EFEB3",
-    tags: [ TAGS.REACT,TAGS.TAILWIND,TAGS.MYSQL]
+    tags: [ TAGS.REACT,TAGS.TAILWIND,TAGS.MYSQL],
+    textdes: "Desarrollé una página web interactiva para la agencia de publicidad y marketing Tigal Group. El sitio fue diseñado con una interfaz moderna y llamativa, enfocada en el posicionamiento digital de la marca y la captación de clientes. Incluye secciones dinámicas que facilitan la presentación de servicios y optimizan la toma de solicitudes en línea, mejorando la experiencia del usuario y fortaleciendo la presencia digital de la empresa."
   },
   {
     img: "img/Cuispes2.png",
     title: "Aplicación Web",
     empresa: "CUISPES PERÚ",
+    año: "2024",
     type: "Web / Local",
     colortext: "#ffcf59",
     colorseparate: "#784D81",
     imgdetail: "img/Cuispes-Web.png",
-    tags: [ TAGS.REACT,TAGS.TAILWIND,TAGS.AZURE]
+    tags: [ TAGS.REACT,TAGS.TAILWIND,TAGS.AZURE],
+    textdes: "Desarrollé Cuispes, una aplicación web interactiva orientada al turismo, diseñada para tabletas informativas en un centro turístico. La plataforma permite a los visitantes conocer la descripción de la zona, así como información detallada de la fauna que habita en el lugar. Su interfaz dinámica y visualmente atractiva fomenta la interacción con los turistas, ofreciendo una experiencia novedosa y educativa. Actualmente en uso, la aplicación ha permitido a la empresa generar mayor dinamismo con sus visitantes, fortaleciendo el valor turístico y la innovación en la presentación de contenidos."
   },
   {
     img: "",
@@ -136,19 +147,22 @@ const images = [
     img: "img/Design-azul.jpg",
     title: "E-Commerce",
     empresa: "TIGAL GROUP",
+    año: "2023",
     type: "Aplicación Web",
-    colortext: "#0212E4",
-    tags: [ TAGS.REACT,TAGS.TAILWIND,TAGS.MYSQL]
+    colortext: "#4A56EC",
+    tags: [ TAGS.REACT,TAGS.TAILWIND,TAGS.MYSQL],
+    textdes: "Diseñé y desarrollé una tienda virtual interactiva para Design Collections, la línea de licorería y floral de Tigal Group. El sitio web presenta una interfaz moderna y atractiva que permite a los usuarios explorar de forma intuitiva los productos, visualizar sus detalles y acceder a una experiencia de compra fluida. Se implementó una pasarela de pagos integrada con Culqi, asegurando transacciones seguras y confiables. Además, se trabajó en la optimización SEO y el posicionamiento digital, potenciando la visibilidad de la marca y facilitando la captación de nuevos clientes."
   },
   {
     img: "img/Proditel.png",
     title: "Sistema Web",
-    empresa: "TIGAL GROUP",
+    empresa: "Proditel S.A.C.",
+    año: "2024",
     type: "Web",
     colortext: "#FC6B03",
     imgdetail: "img/Proditel-Web.png",
-    tags: [ TAGS.REACT,TAGS.TAILWIND,TAGS.ASTRO,TAGS.AZURE]
-
+    tags: [ TAGS.REACT,TAGS.TAILWIND,TAGS.ASTRO,TAGS.AZURE],
+    testdes: "Diseñé una página web moderna y descriptiva para PRODITEL, una empresa dedicada a la gestión de redes e instalación de servidores en zonas remotas del país. El sitio resalta los servicios especializados de la compañía mediante una interfaz clara, atractiva y novedosa, facilitando la comunicación con potenciales clientes. Además, se trabajó en la optimización SEO y el posicionamiento digital, logrando mayor visibilidad en línea y consolidando la presencia de la marca en el sector tecnológico y de telecomunicaciones."
   },
   
   

@@ -55,7 +55,7 @@ const ProyectosInfo = ({info, close}) => {
                         <div className="mt-4 flex justify-between flex-row gap-4">
                             <div className="flex flex-col items-start justify-start w-[50%] ">
                                 <Itemsdetail title='CATEGORIA' item={['APP NODE','INTELIGENCIA ARTIFICIAL']}/>
-                                <Itemsdetail title='AÑO' item={['2023']}/>
+                                <Itemsdetail title='AÑO' item={[info.año]}/>
                                 <Itemsdetail title='EMPRESA' item={['TIGAL GROUP']}/>
                                 <Itemsdetail title='CATEGORIA' item={['APP NODE','INTELIGENCIA ARTIFICIAL']}/>
                                 <Itemsdetail title='TECNOLOGIAS' item={info.tags}/>
