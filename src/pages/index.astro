@@ -1,28 +1,23 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Experiencia from '../components/Experiencia.astro';
-import Proyectos from '../components/Proyectos.astro';
-import About from '../components/About.astro';
-import FloatingShapes from '../components/FloatingShapes';
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Experiencia from "../components/Experiencia.astro";
+import Proyectos from "../components/Proyectos.astro";
+import About from "../components/About.astro";
+import FloatingShapes from "../components/FloatingShapes";
 ---
 
 <Layout title="Daniel Plasencia">
-	
 	<main class="">
 		<div class="items">
-		{/*<FloatingShapes/> */} 
+			<FloatingShapes client:load />
 		</div>
 		<div class="w-auto mt-10 ml-[22%] mr-[22%]">
 			<div class="flex [80%] flex-col items-center justify-center pb-5">
-				
-				<Header/>
-				<Experiencia/>
-				<Proyectos/>
+				<Header />
+				<Experiencia />
+				<Proyectos />
 			</div>
-			
 		</div>
-			
-
 	</main>
 </Layout>

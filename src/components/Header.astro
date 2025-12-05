@@ -1,60 +1,102 @@
 ---
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Github, Linkedin, Instagram } from "lucide-react";
-import './Header.css'
+import "./Header.css";
 ---
 
-    <div class="mb-10 mt-16 w-[80%]">
-        <div class="absolute inset-0 bg-cover bg-repeat-x animate-slide opacity-60" 
-            style={{ backgroundImage: "url('img/pattern.png')" ,backgroundSize: "cover", zIndex: "-1",    
-             WebkitMaskImage: "linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0))", }}>
-        </div>
-        <div class="flex flex-col items-center justify-center">
-            <div class="relative inline-block">
-                <div class="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-[#ebeb33]/30 shadow-2xl animate-pulse-glow">
-                    <img src="img/yo.jpg" alt="" class=" rounded-full w-full h-full object-cover">
-                </div>
-                {/* Decorative ring */}
-                <div class="absolute inset-0 rounded-full border-2 border-[#ebeb33]/20 animate-ping" 
-                    style={{ animationDuration: "3s" }}></div>
+<div class="mb-10 mt-16 w-[80%]">
+    <div
+        class="absolute inset-0 bg-cover bg-repeat-x animate-slide opacity-60"
+        style={{
+            backgroundImage: "url('img/pattern.png')",
+            backgroundSize: "cover",
+            zIndex: "-1",
+            WebkitMaskImage:
+                "linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0))",
+        }}
+    >
+    </div>
+    <div class="flex flex-col items-center justify-center">
+        <div class="relative inline-block">
+            <div
+                class="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-[#ebeb33]/30 shadow-2xl animate-pulse-glow"
+            >
+                <img
+                    src="img/yo.jpg"
+                    alt=""
+                    class="rounded-full w-full h-full object-cover"
+                />
             </div>
-            <div class="name m-5 text-center">
-                <h1 class=" text-5xl md:text-7xl font-bold">Daniel Plasencia</h1>
-                <h2 class="text-[#ebeb33] text-2xl md:text-3xl font-semibold text-gradient">Ing. de Software con IA</h2>
-                <div class="flex flex-row justify-center gap-6 items-center mt-8 mx-4">
-                    <a class="p-4 rounded-full bg-[#282c34] hover:bg-[#ebeb33] hover:text-[#16181d] transition-all duration-300 hover:scale-110" href="">
-                        <Instagram className="w-6 h-6" />
-                    </a>
-                    <a class="p-4 rounded-full bg-[#282c34] hover:bg-[#ebeb33] hover:text-[#16181d] transition-all duration-300 hover:scale-110" href="">
-                       <Linkedin className="w-6 h-6" />
-                    </a>
-                    <a class="p-3 rounded-full bg-[#282c34] hover:bg-[#ebeb33] hover:text-[#16181d] transition-all duration-300 hover:scale-110" href="">
-                        <Github className="w-6 h-6" />
-                    </a>
-                </div>
+            {/* Decorative ring */}
+            <div
+                class="absolute inset-0 rounded-full border-2 border-[#ebeb33]/20 animate-ping"
+                style={{ animationDuration: "3s" }}
+            >
             </div>
         </div>
-        <div class="text-center w-full mt-12">
-            <h1 class="text-[#a6a6a6] text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">Creo experiencias digitales perfectas, atractivas y accesibles, fusionando diseño y tecnología para resolver problemas de 
-                manera innovadora y eficiente, siempre poniendo al usuario en el centro de cada solución</h1>   
-        </div>
-        <div class="flex flex-row w-full items-center justify-center  mt-14">
-            <div class="Imagen TRex mr-7 animate-bounce " >
-                <img src="img/trex.png" width="180" height="180" alt="">
-            </div>
-            <div class="ml-7">
-                <h1 class="font-bold text-2xl">"Te pierdes lo bueno buscando el error"</h1>
-                <h2 class="text-[#DAD91A] text-xl text-center font-semibold">Kase. O</h2>
+        <div class="name m-5 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold">Daniel Plasencia</h1>
+            <h2
+                class="text-[#ebeb33] text-2xl md:text-3xl font-semibold text-gradient"
+            >
+                Ing. de Software con IA
+            </h2>
+            <div
+                class="flex flex-row justify-center gap-6 items-center mt-8 mx-4"
+            >
+                <a
+                    class="p-4 rounded-full bg-[#282c34] hover:bg-[#ebeb33] hover:text-[#16181d] transition-all duration-300 hover:scale-110"
+                    href=""
+                >
+                    <Instagram className="w-6 h-6" />
+                </a>
+                <a
+                    class="p-4 rounded-full bg-[#282c34] hover:bg-[#ebeb33] hover:text-[#16181d] transition-all duration-300 hover:scale-110"
+                    href=""
+                >
+                    <Linkedin className="w-6 h-6" />
+                </a>
+                <a
+                    class="p-3 rounded-full bg-[#282c34] hover:bg-[#ebeb33] hover:text-[#16181d] transition-all duration-300 hover:scale-110"
+                    href=""
+                >
+                    <Github className="w-6 h-6" />
+                </a>
             </div>
         </div>
     </div>
+    <div class="text-center w-full mt-12">
+        <h1
+            class="text-[#a6a6a6] text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
+        >
+            Creo experiencias digitales perfectas, atractivas y accesibles,
+            fusionando diseño y tecnología para resolver problemas de manera
+            innovadora y eficiente, siempre poniendo al usuario en el centro de
+            cada solución
+        </h1>
+    </div>
+    <div class="flex flex-row w-full items-center justify-center mt-14">
+        <div class="Imagen TRex mr-7 animate-bounce">
+            <img src="img/trex.png" width="180" height="180" alt="" />
+        </div>
+        <div class="ml-7">
+            <h1 class="font-bold text-2xl">
+                "Te pierdes lo bueno buscando el error"
+            </h1>
+            <h2 class="text-[#DAD91A] text-xl text-center font-semibold">
+                Kase. O
+            </h2>
+        </div>
+    </div>
+</div>
 <style>
-@keyframes pulse-glow {
-  0%, 100% {
-    box-shadow: 0 0 10px rgba(235, 235, 51, 0.4);
-  }
-  50% {
-    box-shadow: 0 0 25px rgba(235, 235, 51, 0.8);
-  }
-}
+    @keyframes pulse-glow {
+        0%,
+        100% {
+            box-shadow: 0 0 10px rgba(235, 235, 51, 0.4);
+        }
+        50% {
+            box-shadow: 0 0 25px rgba(235, 235, 51, 0.8);
+        }
+    }
 </style>

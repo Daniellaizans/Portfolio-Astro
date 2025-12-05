@@ -1,7 +1,7 @@
 ---
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBriefcase } from "@fortawesome/free-solid-svg-icons"
-import ExperienceItem from "./Experienciaitem.astro"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import ExperienceItem from "./Experienciaitem.astro";
 const EXPERIENCE = [
   {
     date: "Actualmente...",
@@ -17,27 +17,34 @@ const EXPERIENCE = [
     company: "Tigal Group",
     description:
       "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
-  },{
+  },
+  {
     date: "Junio 2023 - Enero 2024",
     title: "Principal Frontend Engineer",
     company: "Tigal Group",
     description:
       "Responsable de la plataforma, componentes y utilidades para la creación y desarrollo de aplicaciones web. Mejora de un 30% en la entrega de software. Implantación de medidas de integración continua y despliegue con A/B testing en más de 15 equipos.",
   },
-]
+];
 ---
 
-<div class="w-full text-center items-start flex flex-col mt-10">
-    <h1 class="font-bold text-4xl text-center"><i class="fa-solid fa-briefcase"></i>  Experiencia Laboral</h1>
-    <div class="mt-14">
-        <ol>
-            {
-                EXPERIENCE.map((experience) => (
-                    <li class="">
-                    <ExperienceItem {...experience} />
-                    </li>
-                ))
-            }
-        </ol>
-    </div>
-</div> 
+<div
+  id="experiencia"
+  class="w-full text-center items-start flex flex-col mt-10"
+>
+  <h1 class="font-bold text-4xl text-center">
+    <i class="fa-solid fa-briefcase"></i> Experiencia Laboral
+  </h1>
+  <div class="mt-14">
+    <ol>
+      {
+        EXPERIENCE.map((experience) => (
+          <li class="">
+            <ExperienceItem {...experience} />
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+</div>
+
