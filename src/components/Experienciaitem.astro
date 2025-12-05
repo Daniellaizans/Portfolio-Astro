@@ -1,40 +1,50 @@
 ---
-import LinkInline from "./LinkInline.astro"
+import LinkInline from "./LinkInline.astro";
 
 interface Props {
-  title: string
-  company: string
-  description: string
-  link?: string
-  date: string
+  title: string;
+  company: string;
+  description: string;
+  link?: string;
+  date: string;
 }
 
-const { title, company, description, link, date } = Astro.props
+const { title, company, description, link, date } = Astro.props;
 ---
 
 <div
-  class=" relative mx-12 pb-12 grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-black/20 dark:before:border-white/15 before:content-[''] md:grid-cols-5 md:gap-10 md:space-x-4]"
+  class="experience-card relative p-6 rounded-xl border border-white/10 bg-gray-900/40 backdrop-blur-sm transition-all duration-500 hover:border-[#DAD91A]/50 hover:bg-gray-900/60 hover:scale-[1.02] group opacity-0 translate-y-8 flex flex-col items-center text-center z-10"
 >
-  <div class="relative pb-12 md:col-span-2">
-    <div class="sticky top-0">
-      <span class="text-[#DAD91A] -left-[42px] absolute rounded-full text-5xl"
-        >&bull;</span
+  <div class="flex flex-col items-center gap-2 mb-4">
+    <div>
+      <h3
+        class="text-xl font-bold text-[#DAD91A] group-hover:text-[#ebeb33] transition-colors"
       >
-
-      <h3 class="text-xl font-bold text-[#DAD91A]">{title}</h3>
-      <h4 class="font-semibold text-xl text-white dark:text-white">{company}</h4>
-      <time class="p-0 m-0 text-sm text-white dark:text-white/80">{date}</time>
+        {title}
+      </h3>
+      <h4 class="font-semibold text-lg text-white/90">{company}</h4>
     </div>
+    <time
+      class="text-sm font-mono text-white/60 bg-white/5 px-3 py-1 rounded-full whitespace-nowrap border border-white/5"
+    >
+      {date}
+    </time>
   </div>
-  <div class="relative flex text-left flex-col gap-2 pb-4 text-white dark:text-gray-300 md:col-span-3">
+
+  <div
+    class="relative flex flex-col gap-2 pb-2 text-gray-300 w-full text-center text-pretty"
+  >
     {description}
-    {
-      link && (
+  </div>
+
+  {
+    link && (
+      <div class="mt-4 pt-4 border-t border-white/5 flex justify-center w-full">
         <LinkInline href={link}>
           Saber más{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 icon icon-tabler icon-tabler-chevron-right"
+            class="w-5 icon icon-tabler icon-tabler-chevron-right group-hover:translate-x-1 transition-transform"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -50,7 +60,7 @@ const { title, company, description, link, date } = Astro.props
             </>
           </svg>
         </LinkInline>
-      )
-    }
-  </div>
+      </div>
+    )
+  }
 </div>

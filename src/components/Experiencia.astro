@@ -1,6 +1,4 @@
 ---
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import ExperienceItem from "./Experienciaitem.astro";
 const EXPERIENCE = [
   {
@@ -32,14 +30,21 @@ const EXPERIENCE = [
   id="experiencia"
   class="w-full text-center items-start flex flex-col mt-10"
 >
-  <h1 class="font-bold text-4xl text-center">
-    <i class="fa-solid fa-briefcase"></i> Experiencia Laboral
-  </h1>
-  <div class="mt-14">
-    <ol>
+  <div class="flex flex-col items-start mb-10">
+    <span class="text-lg text-[#ebeb33] font-bold">TRAYECTORIA</span>
+    <h1 class="font-bold text-4xl">Experiencia Laboral</h1>
+  </div>
+  <div class="w-full relative">
+    {/* Connecting Line */}
+    <div
+      class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-[#DAD91A]/20"
+    >
+    </div>
+
+    <ol class="grid grid-cols-1 gap-12 relative">
       {
         EXPERIENCE.map((experience) => (
-          <li class="">
+          <li>
             <ExperienceItem {...experience} />
           </li>
         ))
@@ -48,3 +53,23 @@ const EXPERIENCE = [
   </div>
 </div>
 
+<script>
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove("opacity-0", "translate-y-8");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px",
+    },
+  );
+
+  document.querySelectorAll(".experience-card").forEach((card) => {
+    observer.observe(card);
+  });
+</script>
